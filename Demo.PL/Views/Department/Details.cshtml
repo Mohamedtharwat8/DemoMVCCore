@@ -1,0 +1,30 @@
+﻿@model DepartmentViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<br />
+<br />
+
+<form asp-action="Create">
+    <div>
+        <label class="col-form-label-lg" asp-for="Code"></label>
+        <input class="col-form-label-lg" asp-for="Code" readonly />
+    </div>
+    <div>
+        <label class="col-form-label-lg" asp-for="Name"></label>
+        <input class="col-form-label-lg" asp-for="Name" readonly />
+    </div>
+    <div>
+        <label class="col-form-label-lg" asp-for="DateOFCreation"></label>
+        <input class="col-form-label-lg" asp-for="DateOFCreation" readonly />
+    </div>
+    <div>
+        <a asp-action="Edit" class="btn btn-light">Edit</a>
+        <a asp-action="Index"  class="btn btn-light"> Back To List</a>
+
+    </div>
+</form>
